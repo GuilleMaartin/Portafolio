@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root  {
+    background-color: #4e878c;
+    background-color: #773344;
+    background-color: #f4f4f4;
+}
+html {
+
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside aside aside"
+    "footer footer footer";
+    width: 100%;
+}
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+.hResponsive{
+    display: none;
+}
+footer div img{
+   width: 150px;
+   height: 150px;
+}
+
+@media screen and (max-width:500px) { 
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+    header{
+        grid-area: header;
+    }
+    nav h1{
+       display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .hResponsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hResponsive ul{
+        position: absolute;
+        right: 0;
+        background-color: #773344;
+        height: 100vh;
+        width: 40vw;
+        text-align: center;
+        transition: 2s;
+        cursor: pointer;
+    }
+    .hResponsive ul:hover{
+        height: 100vh;
+        width: 0;
+    }
+    .conteiner-img{
+        display: flex;
+        justify-content: end;
+    }
+    .li-a{
+        list-style: none;
+        display: inline;
+    }
+    .li-a a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        display: block;
+        border: 1px solid #000;
+        padding: 9px;
+    }
+        header nav ul div img{
+            height: 40px;
+            width: 40px;
+        }
+    
+
+    .header-center{
+        grid-area: main;
+        background-color: #4e878c;
+    }
+        .header-center h1{
+            padding: 4px;
+        }
+            .header-center h2{
+                padding: 6px;
+            }
+                .header-center p{
+                    padding: 6px;
+                }
+    .img-centro{
+        background-color: #4e878c;
+    }
+    aside{
+        grid-area: aside;
+        background-color: #4e878c;
+    }
+    aside nav h3{
+        text-transform: uppercase;
+        margin-top: 7px;
+        padding: 7px;
+    }
+    footer{
+        grid-area: footer;
+        background-color: #f4f4f4;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 250px;
+    }
+    footer div img{
+        height: 20px;
+        width: 20px;
+    }
+}   
