@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+body{
+    display: grid;
+    grid-area: "header header header"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+
+
+
+
+
+
+
+
+
+
+main{
+    grid-area: main;
+}
