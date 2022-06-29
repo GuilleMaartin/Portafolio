@@ -148,6 +148,11 @@ aside nav div h3{
     text-transform: uppercase;
     padding: 1rem;
 }
+aside nav div p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
 aside nav div img{
     width: 30rem;
     height: 25rem;

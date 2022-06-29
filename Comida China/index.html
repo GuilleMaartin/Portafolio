@@ -7,44 +7,119 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
+    <script src="java.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container-izq">
-                <a href="#"><img src="./imagenes/logo.png" alt="logo"></a>
-            </div>
-            <div class="container-centro">
-                <a href=""></a>
-                <a href=""><img src="./imagenes/logo.png" alt="">Log In</a>
-            </div>
-            <div class="container-centroPlus">
-                <a href="#">order online</a>
-            </div>
-            <div class="container-der">
-                <a href="#">reservation</a>
-            </div>
-            <div class="responsive">
+         <nav>
+             <div class="container-izq">
+                 <a href="#"><img src="./imagenes/logo.png" alt="logo"></a>
+             </div>
 
-            </div>
-        </nav>
+             <div class="contenedor-der">
+                 <div class="container-centro">
+                     <a href=""></a>
+                     <a href=""><img src="./imagenes/logo.png" alt="">Log In</a>
+                 </div>
+                 <div class="container-centroPlus">
+                     <a href="#">order online</a>
+                 </div>
+                 <div class="container-reserva">
+                     <a href="#">reservation</a>
+                 </div>
+                 <div class="responsive">
+
+                 </div>
+             </div>
+         </nav>
 
         <main>
             <div class="main-container-title">
                 <h1>Welcome to Amachi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum ex iusto officiis ipsa amet, repellat quidem maiores nisi quisquam quam rerum facere quas hic eveniet ab, perferendis minima laboriosam.</</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum ex iusto officiis ipsa amet, repellat quidem maiores nisi quisquam quam rerum facere quas hic eveniet ab, perferendis minima laboriosam.</</p><br>
                 <a href="#">Read more</a>
             </div>
-            <div class="main-container-img">
-                <img src="" alt="">
+            <!-- <div class="main-container-img">
+                <img src="./imagenes/comida-chinaHeader.jpg" alt="centro-china">
                 <a href="#"><img src="./imagenes/arrow.svg" alt="arrow"></a>
-            </div>
+            </div> -->
         </main>
     </header>
 
     <main>
-
+        <div class="main-container">
+            <div class="main-hijo">
+                <img src="./imagenes/chinese-dumping-jpg.jpg" alt="comida">
+                <h1>Tofu</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <a class="main-a">Read More</a>
+            </div>
+            <div class="main-hijo">
+                <img src="./imagenes/chinese-dumping-jpg.jpg" alt="comida">
+                <h1>Tofu</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <a class="main-a">Read More</a>
+            </div>
+            <div class="main-hijo">
+                <img src="./imagenes/chinese-dumping-jpg.jpg" alt="comida">
+                <h1>Tofu</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <a class="main-a">Read More</a>
+            </div>
+            <div class="main-hijo">
+                <img src="./imagenes/chinese-dumping-jpg.jpg" alt="comida">
+                <h1>Tofu</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</h2>
+                <a class="main-a">Read More</a>
+            </div>
+            <div class="main-hijo">
+                <img src="./imagenes/chinese-dumping-jpg.jpg" alt="comida">
+                <h1>Tofu</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <a class="main-a">Read More</a>
+            </div>
+            <div class="main-hijo">
+                <img src="./imagenes/chinese-dumping-jpg.jpg" alt="comida">
+                <h1>Tofu</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <a class="main-a">Read More</a>
+            </div>
+        </div>
     </main>
+    <aside>
+        <table>
+           <tr>
+             <td colspan="4"><button id="result">0</button></td>
+           </tr>
+           <tr>
+             <td><button onclick="add('1')">1</button></td>
+             <td><button onclick="add('2')">2</button></td>
+             <td><button onclick="add('3')">3</button></td>
+             <td><button onclick="add('+')">+</button></td>
+           </tr>
+           <tr>
+             <td><button onclick="add('4')">4</button></td>
+             <td><button onclick="add('5')">5</button></td>
+             <td><button onclick="add('6')">6</button></td>
+             <td><button onclick="add('-')">-</button></td>
+           </tr>
+           <tr>
+             <td><button onclick="add('7')">7</button></td>
+             <td><button onclick="add('8')">8</button></td>
+             <td><button onclick="add('9')">9</button></td>
+             <td><button onclick="add('*')">*</button></td>
+           </tr>
+           <tr>
+             <td colspan="3"><button onclick="add('0')">0</button></td>
+             <td colspan="3"><button onclick="add('/')">/</button></td>          
+           </tr>
+           <tr>
+             <td colspan="2"><button onclick="del()" class="ac">AC</button></td>
+             <td><button onclick="add('.')">.</button></td>
+             <td><button onclick="calc()">=</button></td>            
+           </tr>
+        </table>
+    </aside> 
 
 </body>
 </html>
