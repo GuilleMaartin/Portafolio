@@ -101,8 +101,6 @@ main{
 
 
 /*ASIDE AREA*/
-
-
 aside{
     grid-area: aside;
     background-color: #4e878c;
@@ -136,6 +134,13 @@ aside{
     .item-a:hover{
        color: darkblue;
     }
+aside h1{
+    text-align: center;
+    margin: 3rem;
+    font-size: 3rem;
+    color: #f4f4f4;
+}
+
 aside nav div h2{
     font-size: 1.5rem;
     text-align: center;
@@ -160,6 +165,31 @@ aside nav div img{
     width: 100%;
 }
 
+/*TRABAJOS REALIZADOS*/
+
+.contenedor-tps{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+aside  div img{
+    width: 30rem;
+    height: 25rem;
+    object-fit: contain;
+    width: 100%;
+}
+aside div .grid-item{
+    text-align: center;
+}
+aside div .grid-item h2 {
+    padding: 1rem;
+}
+aside div .grid-item p{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+}
 /*FOOTER AREA*/
 
 
@@ -193,6 +223,7 @@ footer div img{
         "main main main"
         "aside aside aside"
         "footer footer footer";
+        width: 100%;
     }
     .desktop{
         display: none;
