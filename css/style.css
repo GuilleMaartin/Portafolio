@@ -88,13 +88,13 @@ main{
     margin: 2rem;
     color: #f4f4f4;
 }
-.img-centro{
+.profile-img{
     display: flex;
     justify-content: start;
     align-items: start;
     margin: 2rem;
 }
-.img-centro-port{
+.profile-img2{
     min-width: 30rem;
     min-height: 30rem;
     animation-name: desplazarse;
@@ -258,9 +258,9 @@ footer div img{
     header nav ul:hover{
         width: 0;
     }
-    .img-centro-port{
-        min-width: 30rem;
-        min-height: 30rem;
+    .profile-img2{
+        max-width: 30rem;
+        max-height: 30rem;
         animation-name: desplazarse;
         animation-duration: 2s;
     } 
