@@ -97,8 +97,17 @@ main{
 .img-centro-port{
     min-width: 30rem;
     min-height: 30rem;
+    animation-name: desplazarse;
+    animation-duration: 1s;
 }
-
+@keyframes desplazarse {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /*ASIDE AREA*/
 aside{
@@ -249,6 +258,21 @@ footer div img{
     header nav ul:hover{
         width: 0;
     }
+    .img-centro-port{
+        min-width: 30rem;
+        min-height: 30rem;
+        animation-name: desplazarse;
+        animation-duration: 2s;
+    } 
+    @keyframes desplazarse {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    }
     
    .conteiner-img{
        display: flex;
@@ -274,4 +298,3 @@ footer div img{
        margin-top: 0;
        height: 20vh;
    }
-}
