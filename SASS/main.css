@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
 :root {
   background-color: #f4f4f4;
   --border-primary:#773344;
@@ -13,31 +22,31 @@
   --black-10:#dfdfdf;
 }
 
+html {
+  font-size: 62.5%;
+  /*1rem ==> 10px*/
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  background: var(--black-10);
-  width: 100%;
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "aside aside aside" "article article article" "contact contact contact" "footer footer footer";
+}
+
+.along {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 div {
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 nav {
-  background: var(--blue-primary);
+  background: #333;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
   color: #fff;
-}
-
-.lemon {
-  width: 1.2rem;
-  height: 1.2rem;
 }
 
 .nav-links {
@@ -78,14 +87,13 @@ nav {
   nav {
     justify-content: space-between;
     padding: 0 5vw;
-    font-size: 0.9rem;
   }
   .nav-links {
     position: absolute;
     right: 0;
     top: 8vh;
     min-height: 92vh;
-    background: var(--blue-primary);
+    background: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +150,4 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
