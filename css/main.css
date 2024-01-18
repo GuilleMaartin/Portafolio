@@ -29,6 +29,7 @@ html {
 
 body {
   min-height: 100dvh;
+  background-color: var(--black-10);
 }
 
 .along {
@@ -139,7 +140,7 @@ nav li:first-child .lemon {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    height: 100%;
+    height: 95%;
     padding: 2rem;
     border-radius: 2rem;
   }
@@ -180,8 +181,8 @@ nav li:first-child .lemon {
     height: 75%;
     object-fit: cover;
     border-radius: 50%;
-    border: #773344;
     background-color: var(--black-50);
+    border: 1px solid var(--black-100);
   }
   main {
     height: 75dvh;
@@ -192,6 +193,7 @@ nav li:first-child .lemon {
     gap: 2rem;
     margin-top: 2rem;
     font-size: 2rem;
+    background-color: var(--black-10);
   }
   main h1 {
     font-weight: bold;

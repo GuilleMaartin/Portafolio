@@ -28,6 +28,7 @@ html {
 }
 body{
     min-height: 100dvh;
+    background-color: var(--black-10);
 }
 .along{
     overflow-x: hidden;
@@ -138,7 +139,7 @@ nav li:first-child{
             align-items: center;
             text-align: center;
             margin: 0 auto;
-            height: 100%;
+            height: 95%;
             padding: 2rem;
             border-radius: 2rem;
             h1{ 
@@ -180,8 +181,8 @@ nav li:first-child{
             height: 75%;
             object-fit: cover;
             border-radius: 50%;
-            border: #773344;
             background-color: var(--black-50);
+            border: 1px solid var(--black-100);
         }
     }
 
@@ -194,6 +195,7 @@ nav li:first-child{
         gap: 2rem;
         margin-top: 2rem;
         font-size: 2rem;
+        background-color: var(--black-10);
 
         h1{
             font-weight: bold;
