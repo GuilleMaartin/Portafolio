@@ -146,16 +146,12 @@ nav li:first-child{
                 color: var(--black-100);
                 font-weight: bold;
             }
-            p{
+            a{
                 background-color: #286378;
                 border-radius: 2rem;
                 padding: 1rem;
                 margin: 1rem;
-                transition: 1s;
                 color: var(--black-10);
-                p:hover{
-                    background-color: var(--black-10);
-                }
             }
         }
         div:nth-child(2){
@@ -188,6 +184,7 @@ nav li:first-child{
 
     main{
         height: 75dvh;
+        padding: 1rem;
         position: relative;
         display: flex;
         flex-direction: column;

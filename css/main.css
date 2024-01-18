@@ -148,16 +148,12 @@ nav li:first-child .lemon {
     color: var(--black-100);
     font-weight: bold;
   }
-  header div:first-child p {
+  header div:first-child a {
     background-color: #286378;
     border-radius: 2rem;
     padding: 1rem;
     margin: 1rem;
-    transition: 1s;
     color: var(--black-10);
-  }
-  header div:first-child p p:hover {
-    background-color: var(--black-10);
   }
   header div:nth-child(2) {
     width: 100%;
@@ -186,6 +182,7 @@ nav li:first-child .lemon {
   }
   main {
     height: 75dvh;
+    padding: 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
