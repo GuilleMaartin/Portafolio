@@ -46,8 +46,9 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #286378;
+  background-color: var(--blue-secondary);
   font-size: 1.4rem;
+  padding: 1rem;
 }
 
 nav li {
@@ -72,6 +73,9 @@ nav a:hover {
   background-color: #f0f0f0;
 }
 
+nav li:first-child {
+  cursor: pointer;
+}
 nav li:first-child .lemon {
   width: 16px;
   height: 16px;
@@ -102,11 +106,121 @@ nav li:first-child .lemon {
   height: 32px;
   width: 32px;
   margin: 1rem;
+  display: none;
 }
 
 @media (max-width: 768px) {
   .onHidemobile {
     display: none;
+  }
+  #box-icon {
+    display: block;
+  }
+  nav ul {
+    height: 250px;
+    align-items: flex-start;
+    position: relative;
+  }
+  header {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    margin: 0 auto;
+    height: 65dvh;
+    width: 75%;
+    font-size: 1.4rem;
+    z-index: 1;
+  }
+  header div:first-child {
+    background-color: var(--black-10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  header div:first-child h1 {
+    color: var(--black-100);
+    font-weight: bold;
+  }
+  header div:first-child p {
+    background-color: #286378;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    transition: 1s;
+    color: var(--black-10);
+  }
+  header div:first-child p p:hover {
+    background-color: var(--black-10);
+  }
+  header div:nth-child(2) {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header div:nth-child(2) .icono-header {
+    transition: 0.5s;
+    color: var(--blue-secondary);
+    cursor: pointer;
+    padding: 0.1rem;
+  }
+  header div:nth-child(2) .icono-header:hover {
+    background-color: var(--black-100);
+    border-radius: 1rem;
+  }
+  header img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #773344;
+    background-color: var(--black-50);
+  }
+  main {
+    height: 75dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  main h1 {
+    font-weight: bold;
+  }
+  main h4 {
+    font-weight: bold;
+  }
+  footer {
+    background-color: var(--blue-secondary);
+    height: 30dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    color: var(--black-10);
+  }
+  footer div div:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div div:nth-child(2) {
+    flex-direction: column;
   }
 }
 
