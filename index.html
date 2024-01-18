@@ -11,29 +11,29 @@
 </head>
 <body>
     <div class="along"> 
-        <header>   
-             <nav>
-              <div class="logo">
-                  <p><box-icon name='lemon' class="lemon"></box-icon>Guillermo Rossi</p>
-                  <p>DESARROLLADOR WEB</p>
-              </div>
-              <ul class="nav-links"> 
-                  <a href="#">Home</a>
-                  <a href="#">Proyects</a> 
-                  <a href="#">Contact</a>      
-              </ul>
-              <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-              </div>
-            </nav>
-        </header>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="#" onclick="closeSidebar()"><box-icon name='x' id="box-icon"></box-icon></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Proyects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p><box-icon name='lemon' class="lemon"></box-icon> Guillermo Rossi</p>
+                    <p>Web Developer</p>
+                </li>
+                <li class="onHidemobile"><a href="#">Home</a></li>
+                <li class="onHidemobile"><a href="#">Proyects</a></li>
+                <li class="onHidemobile"><a href="#">Contact</a></li>
+                <box-icon name='menu' id="box-icon" onclick="showSidebar()"></box-icon>
+            </ul>
+        </nav>
     </div>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="/javscript/app.js"></script>
+    <script src="javscript/app.js"></script>
 </body>
 </html>
