@@ -48,7 +48,7 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   background-color: var(--blue-secondary);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1rem;
 }
 
@@ -68,18 +68,21 @@ nav a {
   display: flex;
   align-items: center;
   color: #261F22;
+  transition: 0.3s;
 }
 
 nav a:hover {
   background-color: #f0f0f0;
+  border-radius: 1rem;
 }
 
 nav li:first-child {
   cursor: pointer;
+  font-weight: bold;
 }
 nav li:first-child .lemon {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
 }
 
 .sidebar {
@@ -87,7 +90,7 @@ nav li:first-child .lemon {
   top: 0;
   right: 0;
   height: 100dvh;
-  width: 100%;
+  width: 50%;
   z-index: 10;
   background-color: #dfdfdf;
   backdrop-filter: blur(10px);
@@ -110,6 +113,109 @@ nav li:first-child .lemon {
   display: none;
 }
 
+.headerMobile {
+  display: none;
+}
+
+.mainMobile {
+  display: none;
+}
+
+header {
+  font-size: 1.6rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+header .headerContenedor {
+  background: linear-gradient(to right, #4BA5C4 0%, #4BA5C4 40%, #f4f4f4 40%, #f4f4f4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  height: 75dvh;
+}
+header .headerContenedor .headerProyects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--blue-primary);
+  padding: 2rem;
+  height: 65dvh;
+  width: 30%;
+  color: var(--black-10);
+}
+header .headerContenedor aside {
+  background-color: var(--black-10);
+  height: 65dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+  width: 40%;
+}
+header .headerContenedor aside h1 {
+  font-size: 7rem;
+}
+header .headerContenedor aside h4 {
+  font-size: 2.5rem;
+}
+header .headerContenedor aside .Proyects {
+  width: fit-content;
+  background-color: var(--blue-primary);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+header .headerContenedor aside .Proyects a {
+  color: var(--black-10);
+}
+header img {
+  width: 205px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: var(--black-10);
+  border: 1px solid var(--black-100);
+}
+
+footer {
+  background-color: var(--black-10);
+  height: 35dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+footer .footerContent {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+footer .footerContent .politicy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .footerContent .politicy div {
+  display: flex;
+  align-items: center;
+}
+footer .footerContent aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+/* MOBILE SECTION*/
 @media (max-width: 768px) {
   .onHidemobile {
     display: none;
@@ -123,6 +229,10 @@ nav li:first-child .lemon {
     position: relative;
   }
   header {
+    display: none;
+  }
+  .headerMobile {
+    display: block;
     position: absolute;
     top: 15%;
     left: 15%;
@@ -132,7 +242,7 @@ nav li:first-child .lemon {
     font-size: 1.4rem;
     z-index: 1;
   }
-  header div:first-child {
+  .headerMobile div:first-child {
     background-color: var(--black-10);
     display: flex;
     flex-direction: column;
@@ -144,43 +254,43 @@ nav li:first-child .lemon {
     padding: 2rem;
     border-radius: 2rem;
   }
-  header div:first-child h1 {
+  .headerMobile div:first-child h1 {
     color: var(--black-100);
     font-weight: bold;
   }
-  header div:first-child a {
+  .headerMobile div:first-child a {
     background-color: #286378;
     border-radius: 2rem;
     padding: 1rem;
     margin: 1rem;
     color: var(--black-10);
   }
-  header div:nth-child(2) {
+  .headerMobile div:nth-child(2) {
     width: 100%;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  header div:nth-child(2) .icono-header {
+  .headerMobile div:nth-child(2) .icono-header {
     transition: 0.5s;
     color: var(--blue-secondary);
     cursor: pointer;
     padding: 0.1rem;
   }
-  header div:nth-child(2) .icono-header:hover {
+  .headerMobile div:nth-child(2) .icono-header:hover {
     background-color: var(--black-100);
     border-radius: 1rem;
   }
-  header img {
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
+  .headerMobile img {
+    width: 15rem;
+    height: auto;
+    object-fit: contain;
     border-radius: 50%;
     background-color: var(--black-50);
     border: 1px solid var(--black-100);
   }
-  main {
+  .mainMobile {
     height: 75dvh;
     padding: 1rem;
     position: relative;
@@ -192,33 +302,37 @@ nav li:first-child .lemon {
     font-size: 2rem;
     background-color: var(--black-10);
   }
-  main h1 {
+  .mainMobile h1 {
     font-weight: bold;
   }
-  main h4 {
+  .mainMobile h4 {
     font-weight: bold;
   }
   footer {
     background-color: var(--blue-secondary);
     height: 30dvh;
     width: 100%;
+    font-size: 1.2rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
   footer div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    font-size: 1.4rem;
-    color: var(--black-10);
   }
-  footer div div:first-child {
+  footer div .politicy {
     display: flex;
     flex-direction: column;
   }
-  footer div div:nth-child(2) {
+  footer aside {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  footer aside div {
+    display: flex;
     flex-direction: column;
   }
 }
