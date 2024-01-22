@@ -111,6 +111,28 @@ nav li:first-child{
     display: none;
 }
 
+section{
+    color: var(--black-100);
+    div{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+}
+
+form{   
+    height: auto;
+
+    .container-fluid{
+        width: 25%;
+        margin: 0 auto;
+        padding: 2rem;
+        align-items: center;
+        height: auto;
+        font-size: 1.8rem;
+    }
+}
+
 footer{
     background-color: var(--blue-secondary);
     height: 35dvh;
@@ -227,23 +249,16 @@ footer{
         }
     }
 
-    .mainMobile{
-        height: 75dvh;
-        padding: 1rem;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 2rem;
-        margin-top: 2rem;
-        font-size: 2rem;
-        background-color: var(--black-10);
-
-        h1{
-            font-weight: bold;
-        }
-        h4{
-            font-weight: bold;
+    form{   
+        height: auto;
+    
+        .container-fluid{
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+            align-items: center;
+            height: auto;
+            font-size: 1.8rem;
         }
     }
 

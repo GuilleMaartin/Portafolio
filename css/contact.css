@@ -113,6 +113,27 @@ nav li:first-child .lemon {
   display: none;
 }
 
+section {
+  color: var(--black-100);
+}
+section div {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+form {
+  height: auto;
+}
+form .container-fluid {
+  width: 25%;
+  margin: 0 auto;
+  padding: 2rem;
+  align-items: center;
+  height: auto;
+  font-size: 1.8rem;
+}
+
 footer {
   background-color: var(--blue-secondary);
   height: 35dvh;
@@ -221,23 +242,16 @@ footer .footerContent aside {
     background-color: var(--black-50);
     border: 1px solid var(--black-100);
   }
-  .mainMobile {
-    height: 75dvh;
-    padding: 1rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 2rem;
-    margin-top: 2rem;
-    font-size: 2rem;
-    background-color: var(--black-10);
+  form {
+    height: auto;
   }
-  .mainMobile h1 {
-    font-weight: bold;
-  }
-  .mainMobile h4 {
-    font-weight: bold;
+  form .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: center;
+    height: auto;
+    font-size: 1.8rem;
   }
   footer {
     background-color: var(--blue-secondary);
