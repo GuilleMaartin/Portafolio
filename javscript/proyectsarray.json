@@ -1,0 +1,16 @@
+[
+    {
+        "title":"CECT Consultoria",
+        "rol": "Developer",
+        "text": "I crafted this website with a blend of HTML, CSS, JS, and Bootstrap ensuring its responsiveness for an enhanced user experience.",
+        "img": "https://i.postimg.cc/hGcxZxWS/Captura-de-pantalla-2024-01-21-233940.png",
+        "url":"https://cectconsultoria.com/"
+    },
+    {
+        "title":"MUNDO L",
+        "rol": "Developer",
+        "text": "I crafted this website with a blend of HTML, CSS, and JS. This website isn't responsive ",
+        "img": "https://i.postimg.cc/FRj8Mpvn/Captura-de-pantalla-2024-01-22-001403.png",
+        "url":"https://apps.grupolargentina.com/mundol/index.html"
+    }
+]

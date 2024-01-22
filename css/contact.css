@@ -113,75 +113,6 @@ nav li:first-child .lemon {
   display: none;
 }
 
-.headerMobile {
-  display: none;
-}
-
-.mainMobile {
-  display: none;
-}
-
-header {
-  font-size: 1.6rem;
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-header .headerContenedor {
-  background: linear-gradient(to right, #4BA5C4 0%, #4BA5C4 40%, #f4f4f4 40%, #f4f4f4 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 2rem;
-  height: 75dvh;
-}
-header .headerContenedor .headerProyects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--blue-primary);
-  padding: 2rem;
-  height: 65dvh;
-  width: 30%;
-  color: var(--black-10);
-}
-header .headerContenedor aside {
-  background-color: var(--black-10);
-  height: 65dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3rem;
-  padding: 1rem;
-  width: 40%;
-}
-header .headerContenedor aside h1 {
-  font-size: 7rem;
-}
-header .headerContenedor aside h4 {
-  font-size: 2.5rem;
-}
-header .headerContenedor aside .Proyects {
-  width: fit-content;
-  background-color: var(--blue-primary);
-  padding: 2rem;
-  border-radius: 2rem;
-}
-header .headerContenedor aside .Proyects a {
-  color: var(--black-10);
-}
-header img {
-  width: 205px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 50%;
-  background-color: var(--black-10);
-  border: 1px solid var(--black-100);
-}
-
 footer {
   background-color: var(--blue-secondary);
   height: 35dvh;
@@ -215,7 +146,7 @@ footer .footerContent aside {
   gap: 4rem;
 }
 
-/* MOBILE SECTION*/
+/*MOBILE SECTION*/
 @media (max-width: 768px) {
   .onHidemobile {
     display: none;
@@ -337,4 +268,4 @@ footer .footerContent aside {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=contact.css.map */

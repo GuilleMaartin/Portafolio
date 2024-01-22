@@ -111,81 +111,6 @@ nav li:first-child{
     display: none;
 }
 
-.headerMobile{
-    display: none;
-}
-.mainMobile{
-    display: none;
-}
-
-
-header{
-    font-size: 1.6rem;
-    width: 100%;
-    height: auto;
-    position: relative;
-    .headerContenedor{
-        background: linear-gradient(to right, #4BA5C4 0%, #4BA5C4 40%, #f4f4f4 40%, #f4f4f4 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding: 2rem;
-        height: 75dvh;
-
-        .headerProyects{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            background-color: var(--blue-primary);
-            padding: 2rem;
-            height: 65dvh;
-            width: 30%; 
-            color: var(--black-10);
-           }
-
-        aside{
-            background-color: var(--black-10);
-            height: 65dvh;  
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 3rem;
-            padding: 1rem;
-            width: 40%;
-
-            h1{
-                font-size: 7rem;
-            }
-            h4{
-                font-size: 2.5rem;
-            }
-                .Proyects{
-                    width: fit-content;
-                    background-color: var(--blue-primary);
-                    padding: 2rem;
-                    border-radius: 2rem;
-                    
-                    a{
-                        color: var(--black-10);
-                    }
-                }
-        }
-    }
-
-
-    img{
-        width: 205px;
-        height: auto;
-        object-fit: contain;
-        border-radius: 50%;
-        background-color: var(--black-10);
-        border: 1px solid var(--black-100);
-    }
-}
-
 footer{
     background-color: var(--blue-secondary);
     height: 35dvh;
@@ -222,8 +147,7 @@ footer{
     }
 }
 
-/* MOBILE SECTION*/
-
+/*MOBILE SECTION*/
 
 @media (max-width:768px) {
     .onHidemobile{

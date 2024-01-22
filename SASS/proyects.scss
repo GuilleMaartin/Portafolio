@@ -111,80 +111,56 @@ nav li:first-child{
     display: none;
 }
 
-.headerMobile{
-    display: none;
-}
-.mainMobile{
-    display: none;
-}
-
-
-header{
-    font-size: 1.6rem;
+main{
     width: 100%;
     height: auto;
-    position: relative;
-    .headerContenedor{
-        background: linear-gradient(to right, #4BA5C4 0%, #4BA5C4 40%, #f4f4f4 40%, #f4f4f4 100%);
+    top: 25%;
+    left: 0;
+    padding: 1rem;
+    background-color: #fff;
+    font-size: 1.8rem;
+
+    div{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        position: relative;
-        padding: 2rem;
-        height: 75dvh;
-
-        .headerProyects{
+        .mainTitle{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            background-color: var(--blue-primary);
-            padding: 2rem;
-            height: 65dvh;
-            width: 30%; 
-            color: var(--black-10);
-           }
-
-        aside{
-            background-color: var(--black-10);
-            height: 65dvh;  
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 3rem;
-            padding: 1rem;
-            width: 40%;
-
-            h1{
-                font-size: 7rem;
-            }
-            h4{
-                font-size: 2.5rem;
-            }
-                .Proyects{
-                    width: fit-content;
-                    background-color: var(--blue-primary);
-                    padding: 2rem;
-                    border-radius: 2rem;
-                    
-                    a{
-                        color: var(--black-10);
-                    }
-                }
+            flex-direction: row;
+            margin: 2rem;
         }
     }
-
-
-    img{
-        width: 205px;
+    .contenedor{
+        background-color: var(--blue-primary);
+        margin: 1rem;
+        padding: 2rem;
+        text-align: left;
         height: auto;
-        object-fit: contain;
-        border-radius: 50%;
-        background-color: var(--black-10);
-        border: 1px solid var(--black-100);
+        font-size: 1.5rem;
+        color: var(--black-10);
+        div{
+            width: 100%;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+        img{
+            margin: 1rem;
+            width: 50%;
+            height: auto;
+            object-fit: contain;
+        }
+        a{
+            background-color: var(--black-100);
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: #000;
+            color: var(--black-10);
+        }
+
     }
 }
+
 
 footer{
     background-color: var(--blue-secondary);
@@ -222,8 +198,7 @@ footer{
     }
 }
 
-/* MOBILE SECTION*/
-
+/*MOBILE SECTION*/
 
 @media (max-width:768px) {
     .onHidemobile{
@@ -234,6 +209,7 @@ footer{
     }
 
     nav ul{
+        position: relative;
         height: 250px;
         align-items: flex-start;
         position: relative;
@@ -241,89 +217,56 @@ footer{
     header{
         display: none;
     }
-    .headerMobile{
-        display: block;
-        position: absolute;
-        top: 15%;
-        left: 15%;
-        margin: 0 auto;
-        height: 65dvh;
-        width: 75%;
-        font-size: 1.4rem;
-        z-index: 1;
+   
 
-        div:first-child{
-            background-color: var(--black-10);
+    main{
+        width: 100%;
+        height: auto;
+        top: 25%;
+        left: 0;
+        padding: 1rem;
+        background-color: #fff;
+        font-size: 1.4rem;
+
+        div{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            margin: 0 auto;
-            height: 95%;
+            .mainTitle{
+                display: flex;
+                flex-direction: row;
+                margin: 2rem;
+            }
+        }
+        .contenedor{
+            
+            margin: 1rem;
             padding: 2rem;
-            border-radius: 2rem;
-            h1{ 
-                color: var(--black-100);
-                font-weight: bold;
+            text-align: left;
+            height: auto;
+            div{
+                width: 100%;
+                margin-bottom: 2rem;
+                align-items: flex-start;
+            }
+            img{
+                margin: 1rem;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
             }
             a{
-                background-color: #286378;
-                border-radius: 2rem;
-                padding: 1rem;
                 margin: 1rem;
-                color: var(--black-10);
-            }
-        }
-        div:nth-child(2){
-            width: 100%;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-            .icono-header{
-                transition: .5s;
-                color: var(--blue-secondary);
-                cursor: pointer;
-                padding: .1rem;
-            }
-            .icono-header:hover{
-                background-color: var(--black-100);
+                padding: 1rem;
                 border-radius: 1rem;
             }
-        }
-        img{
-            width: 15rem;
-            height: auto    ;
-            object-fit: contain;
-            border-radius: 50%;
-            background-color: var(--black-50);
-            border: 1px solid var(--black-100);
+
         }
     }
 
-    .mainMobile{
-        height: 75dvh;
-        padding: 1rem;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 2rem;
-        margin-top: 2rem;
-        font-size: 2rem;
-        background-color: var(--black-10);
-
-        h1{
-            font-weight: bold;
-        }
-        h4{
-            font-weight: bold;
-        }
-    }
 
     footer{
+        position: relative;
         background-color: var(--blue-secondary);
         height: 30dvh;
         width: 100%;
@@ -350,4 +293,5 @@ footer{
             }
         }
     }
+    
 }
